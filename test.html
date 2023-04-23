@@ -67,7 +67,7 @@
         if(!pressed_audio) return; //If someone presses diffrent key than we selected it's going to stop the function.
         pressed_audio.currentTime=0;// we can hammer on a sound
         pressed_audio.play();
-        pressed_key.classList.add(`playing`);
+        pressed_key.classList.toggle(`playing`);
         //console.log(pressed_key);
     }
 
